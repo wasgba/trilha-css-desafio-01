@@ -1,0 +1,163 @@
+/* Importa a fonte Raleway do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+/* Estilos globais */
+* {
+  font-family: 'Raleway', sans-serif; /* Define a fonte Raleway para todo o documento */
+  box-sizing: border-box; /* Define o box-sizing para incluir padding e border no tamanho total */
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+}
+
+body {
+  background-color: black; /* Define a cor de fundo do corpo como preto */
+}
+
+h2 {
+  font-size: 2rem; /* Define o tamanho da fonte */
+  color: #33A8DB; /* Define a cor da fonte */
+  font-weight: bold; /* Define o peso da fonte */
+  letter-spacing: 4px; /* Define o espaçamento entre letras */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  margin-bottom: 24px; /* Define a margem inferior */
+}
+
+p {
+  color: white; /* Define a cor da fonte */
+  line-height: 1.6; /* Melhora a legibilidade */
+}
+
+section {
+  margin: 100px auto; /* Define a margem superior e inferior e centraliza */
+  max-width: 1200px; /* Define a largura máxima para responsividade */
+  width: 80%; /* Define a largura relativa para melhor adaptação */
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png'); /* Define a imagem de fundo com gradiente */
+  background-size: cover; /* Define o tamanho da imagem de fundo */
+  background-repeat: no-repeat; /* Define que a imagem de fundo não se repita */
+  height: 600px; /* Define a altura da imagem de fundo */
+  padding-top: 60px; /* Define o padding superior */
+  border-bottom: 1px solid #33A8DB80; /* Define a borda inferior sólida com cor azul claro e 50% de opacidade */
+}
+
+.banner .banner-content {
+  color: white; /* Define a cor da fonte */
+  max-width: 600px; /* Define a largura máxima */
+  margin: auto; /* Centraliza */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.banner h1 {
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  font-weight: 900; /* Define o peso da fonte */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  color: transparent; /* Define a cor da fonte como transparente */
+  background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Define um gradiente linear como fundo do texto */
+  background-clip: text; /* Define que o fundo seja aplicado ao texto */
+  -webkit-background-clip: text; /* Define que o fundo seja aplicado ao texto */
+  margin-bottom: 24px; /* Define a margem inferior */
+}
+
+.banner p {
+  font-size: 1.25rem; /* Define o tamanho da fonte */
+  margin: 16px 0 24px; /* Define as margens superior e inferior */
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, .2); /* Define a cor de fundo com opacidade */
+  height: 260px; /* Define a altura */
+  width: 260px; /* Define a largura */
+  margin: auto; /* Centraliza */
+  border-radius: 50%; /* Define o raio da borda como 50% (círculo) */
+  padding: 16px; /* Define o padding */
+  margin-bottom: 16px; /* Define a margem inferior */
+}
+
+.banner .logo img {
+  width: 100%; /* Define a largura como 100% do elemento pai */
+  height: 100%; /* Define a altura como 100% do elemento pai */
+  object-fit: contain; /* Mantém a proporção e se ajusta ao contêiner */
+}
+
+.banner .banner-content button {
+  color: #31A8DD; /* Define a cor do texto */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte */
+  padding: 16px 32px; /* Define o padding */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  letter-spacing: 4px; /* Define o espaçamento entre letras */
+  background-color: transparent; /* Define a cor de fundo como transparente */
+  border-image: linear-gradient(#3BA1CD, #1572B7); /* Define uma imagem de borda como gradiente */
+  border-image-slice: 10; /* Define o fatiamento da imagem de borda */
+  border-radius: 30px; /* Define o raio da borda */
+}
+
+#course-content {
+  width: 800px; /* Define a largura */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+#course-content .modules-list {
+  margin: 24px 0; /* Define a margem superior e inferior */
+}
+
+#course-content .modules-list .module {
+  color: white; /* Define a cor da fonte */
+  width: 530px; /* Define a largura */
+  margin: 0 auto 24px; /* Centraliza e define a margem inferior */
+  border: 1px solid #33A8DB; /* Define a borda */
+  background-color: #252525; /* Define a cor de fundo */
+  padding: 16px; /* Define o padding */
+  border-radius: 100px; /* Define o raio da borda */
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Define a sombra interna */
+}
+
+#course-content .modules-list .module span {
+  color: #33A8DB; /* Define a cor do texto */
+}
+
+#transform-world {
+  height: 560px; /* Define a altura */
+  background-size: cover; /* Define o tamanho da imagem de fundo */
+  background-image: url("../images/woman-code.png"); /* Define a imagem de fundo */
+  background-attachment: fixed; /* Define o anexo da imagem de fundo */
+  border-top: 1px solid #33A8DB80; /* Define a borda superior */
+  border-bottom: 1px solid #33A8DB80; /* Define a borda inferior */
+  padding: 200px; /* Define o padding */
+}
+
+#transform-world p {
+  font-weight: 900; /* Define o peso da fonte */
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  text-transform: lowercase; /* Converte o texto para minúsculas */
+  max-width: 250px; /* Define a largura máxima */
+  text-shadow: 3px 2px #33A8DB; /* Define a sombra do texto */
+}
+
+#professional-challenges {
+  text-align: center; /* Alinha o texto ao centro */
+  width: 800px; /* Define a largura */
+}
+
+#professional-challenges img {
+  margin: 32px 0; /* Define a margem superior e inferior */
+}
+
+footer {
+  padding: 60px 0; /* Define o padding superior e inferior */
+  text-align: center; /* Alinha o texto ao centro */
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Define a imagem de fundo como gradiente */
+  border-top: 1px solid #33A8DB80; /* Define a borda superior */
+}
+
+footer .dio-logo {
+  width: 300px; /* Define a largura */
+}
+
+footer a {
+  color: #33A8DB; /* Define a cor do texto */
+  font-weight: bold; /* Define o peso da fonte */
+  text-decoration: none; /* Remove a decoração do texto */
+}
